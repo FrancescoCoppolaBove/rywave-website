@@ -1,0 +1,32 @@
+const GasPredictor = ({ className, width, height }) => {
+  return (
+    <svg
+      width="204"
+      height="204"
+      viewBox="0 0 204 204"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <rect width="204" height="204" fill="url(#pattern0)" />
+      <defs>
+        <pattern
+          id="pattern0"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlinkHref="#image0_174_876" transform="scale(0.0104167)" />
+        </pattern>
+        <image
+          id="image0_174_876"
+          width="96"
+          height="96"
+          xlinkHref="data:image/png;base64,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"
+        />
+      </defs>
+    </svg>
+  );
+};
+
+export default GasPredictor;
