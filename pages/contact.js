@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Link from "next/Link";
+import NextLink from "next/Link";
 import Linkedin from "../assets/icons/Linkedin";
 import Instagram from "../assets/icons/Instagram";
 import Twitter from "../assets/icons/Twitter";
@@ -64,9 +64,9 @@ const Contact = () => {
               <h2 className={style.primaryText}>
                 also you can contact us via email
               </h2>
-              <Link href="mailto:contact@rywave.io">
+              <NextLink href="mailto:contact@rywave.io">
                 <span className={style.email}>contact@rywave.io</span>
-              </Link>
+              </NextLink>
             </div>
           </div>
         </section>

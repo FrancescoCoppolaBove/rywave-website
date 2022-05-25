@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import NextLink from "next/NextLink";
 import { useRouter } from "next/router";
 
 const style = {
@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <div className={style.wrapper}>
-      <Link href="/">
+      <NextLink href="/">
         <div className={style.logoContainer}>
           <img
             className={style.logo}
@@ -27,9 +27,9 @@ const Header = () => {
           <span className={style.rywave}>rywave</span>
           {/* <Image alt="rywave logo" src={rywaveLogo} height={40} width={170} /> */}
         </div>
-      </Link>
+      </NextLink>
       <div className={style.headerItems}>
-        <Link href="/">
+        <NextLink href="/">
           <div
             className={`${style.headerItem} ${
               route === "/" ? "text-[#F51651]" : ""
@@ -37,8 +37,8 @@ const Header = () => {
           >
             Home
           </div>
-        </Link>
-        <Link href="/about">
+        </NextLink>
+        <NextLink href="/about">
           <div
             className={`
               ${style.headerItem}
@@ -46,8 +46,8 @@ const Header = () => {
           >
             About
           </div>
-        </Link>
-        <Link href="/utilites">
+        </NextLink>
+        <NextLink href="/utilites">
           <div
             className={`
               ${style.headerItem}
@@ -55,7 +55,7 @@ const Header = () => {
           >
             Utilites
           </div>
-        </Link>
+        </NextLink>
         <div className={style.headerItem}>White Paper</div>
       </div>
     </div>

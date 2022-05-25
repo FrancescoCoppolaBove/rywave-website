@@ -4,7 +4,7 @@ import Instagram from "../assets/icons/Instagram";
 import Facebook from "../assets/icons/Facebook";
 import Twitter from "../assets/icons/Twitter";
 import TikTok from "../assets/icons/TikTok";
-import Link from "next/Link";
+import NextLink from "next/Link";
 import Arrow from "../assets/icons/Arrow";
 
 const style = {
@@ -47,9 +47,9 @@ const Footer = () => {
             <div>
               <p className={style.headerLink}>Company</p>
               <nav className={style.nav}>
-                <Link href="/about">
+                <NextLink href="/about">
                   <a className={style.link}>About</a>
-                </Link>
+                </NextLink>
                 <a className={style.link}>White Paper</a>
               </nav>
             </div>
@@ -57,23 +57,23 @@ const Footer = () => {
               <p className={style.headerLink}>Product</p>
               <nav className={style.nav}>
                 <a className={style.link}>Programs</a>
-                <Link href="/utilites">
+                <NextLink href="/utilites">
                   <a className={style.link}>Utilites</a>
-                </Link>
+                </NextLink>
               </nav>
             </div>
             <div>
               <p className={style.headerLink}>Resources</p>
               <nav className={style.nav}>
-                <Link href="/terms">
+                <NextLink href="/terms">
                   <a className={style.link}>Terms of Use</a>
-                </Link>
-                <Link href="/contact">
+                </NextLink>
+                <NextLink href="/contact">
                   <a className={style.link}>Contact</a>
-                </Link>
-                <Link href="/faq">
+                </NextLink>
+                <NextLink href="/faq">
                   <a className={style.link}>FAQs</a>
-                </Link>
+                </NextLink>
               </nav>
             </div>
           </div>
@@ -81,14 +81,14 @@ const Footer = () => {
         <div className={style.bottomFooterContainer}>
           <p className={style.copyright}>© 2022 Rywave | Powered by Rywave </p>
           <div className={style.socialContainer}>
-            <Link href="/about">
+            <NextLink href="/about">
               <TikTok
                 className={style.icon}
                 width="18"
                 height="18"
                 color="#6E1129"
               />
-            </Link>
+            </NextLink>
             <Linkedin
               className={style.icon}
               width="19"

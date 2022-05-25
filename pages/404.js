@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Link from "next/Link";
+import NextLink from "next/Link";
 import NotFound from "../assets/404Illustration";
 
 const style = {
@@ -26,9 +26,9 @@ const PageNotFound = () => {
               <br />
               But you may be lost in blockchain
             </p>
-            <Link href="/">
+            <NextLink href="/">
               <div className={style.action}>back to home</div>
-            </Link>
+            </NextLink>
 
             <div className={style.illustration}>
               <NotFound />
