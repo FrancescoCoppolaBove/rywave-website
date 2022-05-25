@@ -1,26 +1,19 @@
+import Donut from "../../assets/icons/Donut";
+import Indicators from "../../assets/icons/Indicators";
+
 const style = {
   section: ``,
-  contentWrapper: `max-w-7xl mx-auto`,
-  donut: `relative w-[300px] h-[300px] rounded-[100%]`,
-  center: `absolute bg-[#181818] text-center top-0 left-0 bottom-0 right-0 w-[230px] h-[230px] m-auto rounded-[50%] flex flex-col items-center justify-center`,
-  subTitle: `text-[1.5rem] font-astro-space`,
-  howItWorks: `font-montserrat text-[1rem]`,
-  donutChildContainer: `absolute`,
-  lineContainer: ``,
-  slice1: `bg-[#270911] rotate-[0deg]`,
-  slice2: `bg-[#7A122E]`,
-  slice3: `bg-[#BD4666]`,
-  slice4: `bg-[#CE718A] rotate-[300deg]`,
-  line1: ``,
-  line2: ``,
-  line3: ``,
-  line3: ``,
-  text1: ``,
-  text2: ``,
+  contentWrapper: `max-w-7xl mx-auto flex`,
+  donut: `relative w-1/2`,
+  indicators: `absolute top-[4rem] left-[21.5rem]`,
+  textContainer: `ml-[1rem] pt-[1.3rem]`,
+  donutChildContainer: `mb-[2rem]`,
+  text1: `top-[3rem] left-[24rem]`,
+  text2: `top-[8rem] left-[36.5rem]`,
   text3: ``,
   text4: ``,
-  topic: ``,
-  p: ``,
+  topic: `font-montserrat font-medium font-[1rem] pb-[0.5rem]`,
+  p: `font-montserrat text-[0.875rem] font-normal`,
 };
 
 const HowItWorks = () => {
@@ -28,35 +21,21 @@ const HowItWorks = () => {
     <section className={style.section}>
       <div className={style.contentWrapper}>
         <div className={style.donut}>
-          <div className={`${style.slice1}` + " portion-block"}>
-            <div className="circle"></div>
-          </div>
-          <div className={`${style.slice2}` + " portion-block"}>
-            <div className="circle"></div>
-          </div>
-          <div className={`${style.slice3}` + " portion-block"}>
-            <div className="circle"></div>
-          </div>
-          <div className={`${style.slice4}` + " portion-block"}>
-            <div className="circle"></div>
-          </div>
-
-          {/* <div className={style.center}>
-            <span className={style.subTitle}>Rywave</span>
-            <span className={style.howItWorks}>How it works</span>
-          </div> */}
-          {/* <div className={`${style.donutChildContainer} ${style.text1}`}>
+          <Donut width="500" height="500" />
+          <Indicators className={style.indicators} width="166" />
+        </div>
+        <div className={style.textContainer}>
+          <div className={`${style.donutChildContainer} ${style.text1}`}>
             <div className={`${style.line1} ${style.lineContainer}`}></div>
             <div className={style.textContainer}>
               <h3 className={style.topic}>Fill out the form</h3>
               <p className={style.p}>
-                {" "}
                 - Fill out artist form and join our community
               </p>
             </div>
           </div>
-          <div className={`${style.donutChildContainer} ${style.text1}`}>
-            <div className={`${style.line1} ${style.lineContainer}`}></div>
+          <div className={`${style.donutChildContainer} ${style.text2}`}>
+            <div className={`${style.line2} ${style.lineContainer}`}></div>
             <div className={style.textContainer}>
               <h3 className={style.topic}>Copyright</h3>
               <p className={style.p}>
@@ -67,8 +46,8 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div className={`${style.donutChildContainer} ${style.text1}`}>
-            <div className={`${style.line1} ${style.lineContainer}`}></div>
+          <div className={`${style.donutChildContainer} ${style.text3}`}>
+            <div className={`${style.line3} ${style.lineContainer}`}></div>
             <div className={style.textContainer}>
               <h3 className={style.topic}>Music and NFTs</h3>
               <p className={style.p}>
@@ -78,8 +57,8 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div className={`${style.donutChildContainer} ${style.text1}`}>
-            <div className={`${style.line1} ${style.lineContainer}`}></div>
+          <div className={`${style.donutChildContainer} ${style.text4}`}>
+            <div className={`${style.line4} ${style.lineContainer}`}></div>
             <div className={style.textContainer}>
               <h3 className={style.topic}>Insights Platform</h3>
               <p className={style.p}>
@@ -87,7 +66,7 @@ const HowItWorks = () => {
                 Insights Platform for artistic management.
               </p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

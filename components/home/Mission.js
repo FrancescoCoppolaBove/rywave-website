@@ -13,7 +13,7 @@ const style = {
   illustration: ``,
   polygon: `absolute top-[300px] left-[-240px] z-[1] lg:visible invisible`,
   differenceIllustration: `w-[407px] h-[385px] absolute z-[100] left-[30px] top-[330px] lg:visible invisible`,
-  textContainer: `relative z-[10000]`,
+  textContainer: `relative z-[10000] w-4/5`,
   headerContainer: `grid grid-cols-3 gap-8 pb-[5rem]`,
   titleContainer: `flex items-center font-montserrat uppercase text-[1.5rem] pb-[10px]`,
   anchor: `flex items-center`,
@@ -107,36 +107,32 @@ const Mission = () => {
             <div className={style.pContainer}>
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                 <p className={style.p}>
-                  Our artists become creators of intellectual property and the
-                  creators of their own artistic presence, putting them in the
-                  drivers seat.
+                  Every artist, no matter the size, is given an equal chance to
+                  showcase their art through the community and our streaming
+                  platform, the Discotheque.
                 </p>
                 <p className={style.p}>
-                  The insights platform showcases all revenue the artist
-                  produces on our network, along with their streaming data and
-                  crowdfounding resources.
-                </p>
-                <p className={style.p}>
-                  Copyright infringment playing an important role in the music
-                  industry, we believe it is crucial to maintain ownership of
-                  music, we made it a part of the network.
+                  For the purpose of engaging every artist in equal manner, we
+                  will be hosting daily community voting contests containing
+                  various prizes.
                 </p>
               </div>
               <div className={openTab === 2 ? "block" : "hidden"} id="link1">
-                <p className={style.p}>SECONDO TEST</p>
                 <p className={style.p}>
-                  The insights platform showcases all revenue the artist
-                  produces on our network, along with their streaming data and
-                  crowdfounding resources.
+                  Selected artists are connected to a design and marketing team
+                  to help you reach a wider audience.
                 </p>
                 <p className={style.p}>
-                  Copyright infringment playing an important role in the music
-                  industry, we believe it is crucial to maintain ownership of
-                  music, we made it a part of the network.
+                  Through the Rywave community we offer plenty of opportunities
+                  to promote your art via contests and social media.
                 </p>
               </div>
               <div className={openTab === 3 ? "block" : "hidden"} id="link1">
-                <p className={style.p}>TERZO TESTO</p>
+                <p className={style.p}>
+                  Our artists become creators of intellectual property and the
+                  creators of their own artistic presence, putting them in the
+                  driver&apos;s seat.
+                </p>
                 <p className={style.p}>
                   The insights platform showcases all revenue the artist
                   produces on our network, along with their streaming data and

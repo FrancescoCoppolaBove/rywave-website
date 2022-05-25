@@ -5,13 +5,13 @@ import Facebook from "../assets/icons/Facebook";
 import Twitter from "../assets/icons/Twitter";
 import TikTok from "../assets/icons/TikTok";
 import Link from "next/Link";
-import FooterLogo from "../assets/FooterLogo";
+import Arrow from "../assets/icons/Arrow";
 
 const style = {
-  footer: `pb-[3rem] pt-[8rem] shadow-[0_-6px_24px_5px_rgba(0,0,0,0.8)]`,
+  footer: `relative pb-[3rem] pt-[8rem] shadow-[0_-6px_24px_5px_rgba(0,0,0,0.8)]`,
   footerContainer: `border-t-2 border-[#59081D] max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8`,
   footerGrid: `grid grid-cols-1 gap-8 lg:grid-cols-3`,
-  logo: `mr-5 h-full`,
+  logo: `mr-5 h-full p-[1rem]`,
   linkMap: `grid grid-cols gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3`,
   headerLink: `font-montserrat text-[1rem] text-[#E5E6DF]`,
   nav: `flex flex-col mt-4 space-y-2`,
@@ -20,15 +20,28 @@ const style = {
   socialContainer: `grid grid-cols gap-4 lg:grid-cols-6`,
   icon: `cursor-pointer`,
   copyright: `font-montserrat text-[#6C6C6C] text-[0.9rem]`,
+  backToTop: `absolute bottom-[16rem] right-[5rem] w-[60px] h-[60px] bg-[#1D1D1D] flex items-center justify-center`,
 };
 
 const Footer = () => {
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className={style.footer}>
       <div className={style.footerContainer}>
         <div className={style.footerGrid}>
           <div className={style.logo}>
-            <FooterLogo />
+            <img
+              width="100"
+              heigth="100"
+              src="images/logo-footer.png"
+              alt="logo rywave"
+            />
           </div>
           <div className={style.linkMap}>
             <div>
@@ -109,6 +122,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <button className={style.backToTop} onClick={goToTop}>
+        <Arrow width="25" height="17" />
+      </button>
     </footer>
   );
 };

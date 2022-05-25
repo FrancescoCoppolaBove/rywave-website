@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Arrow from "../../assets/icons/Arrow";
 
 const style = {
   section: `py-[10rem]`,
@@ -36,45 +37,11 @@ const Faq = () => {
                   }}
                   className={style.button}
                 >
-                  {open1 ? (
-                    <svg
-                      className={style.buttonIcon}
-                      role="button"
-                      aria-label="close dropdown"
-                      width="10"
-                      height="6"
-                      viewBox="0 0 10 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 5L5 1L9 5"
-                        stroke="#4B5563"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      className={style.buttonIcon}
-                      width="10"
-                      role="button"
-                      aria-label="open dropdown"
-                      height="6"
-                      viewBox="0 0 10 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1L5 5L9 1"
-                        stroke="#4B5563"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  )}
+                  <Arrow
+                    width="16"
+                    height="8"
+                    className={open1 ? "rotate-180" : null}
+                  />
                 </button>
               </div>
 
@@ -100,45 +67,11 @@ const Faq = () => {
                   }}
                   className={style.button}
                 >
-                  {open2 ? (
-                    <svg
-                      className={style.buttonIcon}
-                      role="button"
-                      aria-label="close dropdown"
-                      width="10"
-                      height="6"
-                      viewBox="0 0 10 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 5L5 1L9 5"
-                        stroke="#4B5563"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      className={style.buttonIcon}
-                      width="10"
-                      role="button"
-                      aria-label="open dropdown"
-                      height="6"
-                      viewBox="0 0 10 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1L5 5L9 1"
-                        stroke="#4B5563"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  )}
+                  <Arrow
+                    width="16"
+                    height="8"
+                    className={open2 ? "rotate-180" : null}
+                  />
                 </button>
               </div>
 
@@ -164,45 +97,11 @@ const Faq = () => {
                   }}
                   className={style.button}
                 >
-                  {open3 ? (
-                    <svg
-                      className={style.buttonIcon}
-                      role="button"
-                      aria-label="close dropdown"
-                      width="10"
-                      height="6"
-                      viewBox="0 0 10 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 5L5 1L9 5"
-                        stroke="#4B5563"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      className={style.buttonIcon}
-                      width="10"
-                      role="button"
-                      aria-label="open dropdown"
-                      height="6"
-                      viewBox="0 0 10 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1L5 5L9 1"
-                        stroke="#4B5563"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  )}
+                  <Arrow
+                    width="16"
+                    height="8"
+                    className={open3 ? "rotate-180" : null}
+                  />
                 </button>
               </div>
 

@@ -1,0 +1,20 @@
+{
+  "resources": [
+    {
+      "title": "NFT 01",
+      "imageUrl": "/images/nft-carousel-01.png"
+    },
+    {
+      "title": "NFT 02",
+      "imageUrl": "/images/nft-carousel-02.png"
+    },
+    {
+      "title": "NFT 03",
+      "imageUrl": "/images/nft-carousel-03.png"
+    },
+    {
+      "title": "NFT 02",
+      "imageUrl": "/images/nft-carousel-02.png"
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Hero from "../components/utilites/Hero";
+import RoadMap from "../components/utilites/RoadMap";
 
 const style = {
-  wrapper: ``,
+  wrapper: `antialiased`,
 };
 
 const Utilites = () => {
@@ -9,6 +12,9 @@ const Utilites = () => {
     <div className={style.wrapper}>
       <>
         <Header />
+        <Hero />
+        <RoadMap />
+        <Footer />
       </>
     </div>
   );

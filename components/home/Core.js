@@ -6,7 +6,7 @@ const style = {
   contentWrapper: `items-center `,
   title: `mt-[20px] text-center before:content-['Why_our_platform'] z-[100] text-brand-red uppercase font-montserrat text-[3rem] font-normal relative before:text-[4rem] before:absolute before:font-astro-space before:top-[-30px] before:right-[-150px] before:left-[-100px] before:z-[-1] before:text-transparent before:text-stroke`,
   containerSubtitle: `flex justify-center pt-[50px] px-5 mb-10 relative`,
-  subTitle: `relative text-[#F4F4F4] font-montserrat text-[20px] font-light p-[40px] pt-0 pb-[60px] before:content-[''] before:absolute before:left-0 before:bottom-0 before:border-l-2 before:border-solid before:border-l-rose-500 before:h-[100%] after:content[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:border-b-rose-500 after:w-[50%] before:rounded after:border-solid`,
+  subTitle: `relative text-[#F4F4F4] font-montserrat text-[20px] font-light p-[40px] pt-0 pb-[60px] before:content-[''] before:rounded-bl-[10px] before:absolute before:bg-brand-red before: before:left-0 before:bottom-0 before:border-l-2 before:border-solid before:border-l-rose-500 before:h-[100%] after:content[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:border-b-rose-500 after:w-[50%] before:rounded after:border-solid`,
   buttonContainer: `absolute bottom-[-20px] left-[54%]`,
   button: `text-white px-[40px] mr-[25px] py-[10px] font-montserrat text-[16px] font-light border-b border-[#00D2F2]`,
 };

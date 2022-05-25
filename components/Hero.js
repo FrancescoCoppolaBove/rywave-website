@@ -1,7 +1,6 @@
 const style = {
   wrapper: `container max-w-lg mx-auto text-center md:max-w-none md:text-center`,
-  container: ``,
-  contentWrapper: `flex h-screen relative justify-center flex-wrap items-center before:content-[''] before:absolute before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('../assets/images/background-Hero.png')] before:bg-cover before:z-[-1]`,
+  contentWrapper: `flex h-screen relative justify-center flex-wrap items-center before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('../assets/images/background-Hero.png')] before:bg-cover before:z-[-1]`,
   copyContainer: `w-1/2 justify-center text-center`,
   title: `relative text-white text-[72px] font-astro-space`,
   subTitle: `font-montserrat text-[#6C6C6C] text-[24px]`,
