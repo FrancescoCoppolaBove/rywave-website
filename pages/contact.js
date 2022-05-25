@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import NextLink from "next/Link";
+import NextLink from "next/link";
 import Linkedin from "../assets/icons/Linkedin";
 import Instagram from "../assets/icons/Instagram";
 import Twitter from "../assets/icons/Twitter";

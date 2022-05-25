@@ -4,7 +4,7 @@ import Instagram from "../assets/icons/Instagram";
 import Facebook from "../assets/icons/Facebook";
 import Twitter from "../assets/icons/Twitter";
 import TikTok from "../assets/icons/TikTok";
-import NextLink from "next/Link";
+import NextLink from "next/link";
 import Arrow from "../assets/icons/Arrow";
 
 const style = {

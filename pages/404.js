@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import NextLink from "next/Link";
+import NextLink from "next/link";
 import NotFound from "../assets/404Illustration";
 
 const style = {
