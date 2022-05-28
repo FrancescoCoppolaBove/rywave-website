@@ -8,7 +8,7 @@ import Faq from "../components/home/Faq";
 import HowItWorks from "../components/home/HowItWorks";
 
 const style = {
-  wrapper: `antialiased `,
+  wrapper: `antialiased overflow-hidden`,
 };
 
 const Home = () => {

@@ -3,10 +3,25 @@ import Indicators from "../../assets/icons/Indicators";
 
 const style = {
   section: ``,
-  contentWrapper: `max-w-7xl mx-auto flex`,
-  donut: `relative w-1/2`,
+  contentWrapper: `max-w-7xl mx-auto flex flex-col md:flex-row relative`,
+  mobileTree: `md:hidden w-[5rem] border-y-[3px] border-r-[5px] border-brand-red h-[44rem] top-[3rem] left-0 absolute `,
+  circle: `w-[20px] h-[20px] bg-brand-red rounded-[50%] absolute`,
+  mapCircle: `w-[15px] h-[15px] bg-brand-red rounded-[50%] absolute`,
+  topCircle: `right-[-10px] top-[-10px]`,
+  bottomCircle: `bottom-[-10px] right-[-10px]`,
+  line: `w-[2rem] h-[3px] bg-brand-red absolute`,
+  firstLine: `top-[4.5rem] right-[-2rem]`,
+  firstCircle: `top-[4.1rem] right-[-2rem]`,
+  secondCircle: `top-[10.6rem] right-[-2rem]`,
+  thirdCircle: `top-[22.6rem] right-[-2rem]`,
+  fourthCircle: `top-[33.1rem] right-[-2rem]`,
+  secondLine: `top-[11rem] right-[-2rem]`,
+  thirdLine: `top-[23rem] right-[-2rem]`,
+  fourthLine: `top-[33.5rem] right-[-2rem]`,
+  title: `md:hidden text-center font-montserrat uppercase text-[#E5E6DF] pb-[3rem]`,
+  donut: `hidden md:block relative w-1/2`,
   indicators: `absolute top-[4rem] left-[21.5rem]`,
-  textContainer: `ml-[1rem] pt-[1.3rem]`,
+  textContainer: `pl-[4rem] pr-[1rem] md:px-0 ml-0 md:ml-[1rem] pt-[1.3rem]`,
   donutChildContainer: `mb-[2rem]`,
   text1: `top-[3rem] left-[24rem]`,
   text2: `top-[8rem] left-[36.5rem]`,
@@ -20,6 +35,19 @@ const HowItWorks = () => {
   return (
     <section className={style.section}>
       <div className={style.contentWrapper}>
+        <div className={style.mobileTree}>
+          <div className={`${style.circle} ${style.topCircle}`}></div>
+          <div className={`${style.circle} ${style.bottomCircle}`}></div>
+          <div className={`${style.mapCircle} ${style.firstCircle}`}></div>
+          <div className={`${style.mapCircle} ${style.secondCircle}`}></div>
+          <div className={`${style.mapCircle} ${style.thirdCircle}`}></div>
+          <div className={`${style.mapCircle} ${style.fourthCircle}`}></div>
+          <div className={`${style.line} ${style.firstLine}`}></div>
+          <div className={`${style.line} ${style.secondLine}`}></div>
+          <div className={`${style.line} ${style.thirdLine}`}></div>
+          <div className={`${style.line} ${style.fourthLine}`}></div>
+        </div>
+        <h2 className={style.title}>How it works</h2>
         <div className={style.donut}>
           <Donut width="500" height="500" />
           <Indicators className={style.indicators} width="166" />

@@ -1,8 +1,7 @@
-import CornSmall from "../../assets/images/CornSmall";
-import CornBig from "../../assets/images/CornBig";
+import Corn from "../../assets/images/Corn";
 
 const style = {
-  section: `antialiased pt-[5rem] pb-[10rem] relative`,
+  section: `antialiased pt-[5rem] pb-[10rem] relative overflow-hidden`,
   contentWrapper: `max-w-7xl mx-auto px-[3rem]`,
   headingContainer: `w-2/3`,
   heading: `text-montserrat text-[2.25rem] uppercase text-[#E5E6DF]`,
@@ -11,7 +10,7 @@ const style = {
   leftList: `w-1/2`,
   rightList: `w-1/2`,
   li: `text-[1.25rem] font-montserrat text-[#FFFFFF] font-medium pb-[3rem]`,
-  illustrationContainer: `absolute top-[8rem] right-0 flex flex-col items-center`,
+  illustrationContainer: `absolute top-[13rem] right-[4rem] flex flex-col items-center z-[-3]`,
   cornSmall: ``,
 };
 
@@ -49,8 +48,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={style.illustrationContainer}>
-        <CornSmall className={style.cornSmall} width="231" height="277" />
-        <CornBig width="380" height="422" />
+        <Corn width="380" height="663" />
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ const style = {
   wrapper: `antialiased`,
   section: `pt-[10rem] pb-[4rem] relative`,
   iconPhone: `absolute right-0 top-[50px]`,
-  contentWrapper: `max-w-7xl mx-auto w-1/2 relative`,
+  contentWrapper: `md:max-w-7xl mx-auto w-[100%] md:w-1/2 relative`,
   box: `mb-[10rem]`,
   primaryText: `font-montserrat uppercase text-[2.25rem] font-medium pb-[2rem]`,
   socials: `flex gap-[4rem]`,
